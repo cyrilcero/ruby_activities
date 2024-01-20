@@ -40,13 +40,13 @@ puts new_arr
 
 # CODING CHALLENGE
 
-def is_perfect_square(num)
-  return false if num.negative
-  return true if num.zero
+def is_perfect_square(n)
+  return false if n.negative
+  return true if n.zero
 
-  return unless num.positive
+  return unless n.positive
 
-  ans = num**0.5
+  ans = n**0.5
   ans.to_int * ans.to_int == n
 end
 
@@ -57,18 +57,13 @@ puts "Is 4 a perfect square? #{is_perfect_square(4)}"
 puts "Is 25 a perfect square? #{is_perfect_square(25)}"
 puts "Is 26 a perfect square? #{is_perfect_square(26)}"
 
-puts 'NUMBER 5'
-arr = [1, 3, 5, 7, 9, 11]
-number = 3
 
-def check_number(arr, number)
-  arr.each do |x|
-    if x == number
-      puts 'true'
-    else
-      puts 'false'
-    end
-  end
+num = 25
+
+def check(num)
+  return false if num < 0
+  return true if num == 0
+  num % (num**0.5) == 0
 end
 
-check_number(arr, number)
+

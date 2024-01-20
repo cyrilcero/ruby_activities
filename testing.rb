@@ -1,6 +1,7 @@
 
 
-def sample(object, text)
-puts object
-puts text
+def sample(text, **object, **another_one)
+    puts text
+    puts object
+    puts another_one
 end
