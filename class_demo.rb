@@ -1,6 +1,7 @@
 # imagine HR software
 
 # DRY - dont repeat yourself
+# WET - write everything twice (if )
 # Inheritance makes our code DRY
 # Inheritance enables code reuse
 
