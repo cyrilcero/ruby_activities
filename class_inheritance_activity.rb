@@ -11,11 +11,11 @@ class Cupcake < Confection
   end
 end
 
-class Banana_Cake < Confection
+class BananaCake < Confection
 end
 
 cupcake_test = Cupcake.new
 cupcake_test.prepare
 
-banana_cake_test = Banana_Cake.new
+banana_cake_test = BananaCake.new
 banana_cake_test.prepare
