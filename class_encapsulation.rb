@@ -2,7 +2,7 @@
 
 # Student class that has a method of full_name taking in a full name argument
 class Student
-  attr_accessor :firstname, :lastname
+  attr_reader :firstname, :lastname
 
   def full_name=(full_name)
     @firstname, @lastname = full_name.split
