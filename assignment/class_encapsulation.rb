@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-# Student class that has a method of full_name taking in a full name argument
 class Student
   attr_reader :firstname, :lastname
 
