@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class People
   def greet(nationality)
     nationality.greet

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Confection
   def prepare
     puts 'Baking at 350 degrees for 25 minutes'
