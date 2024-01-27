@@ -8,12 +8,14 @@ end
 
 class American < NPC
   def greet
+    super
     puts 'Good Morning!'
   end
 end
 
 class Filipino < NPC
   def greet
+    super
     puts 'Magandang Umaga!'
   end
 end

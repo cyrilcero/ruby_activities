@@ -11,8 +11,6 @@ module BuyerPermission
 end
 
 class User
-  attr_writer :password
-
   def initialize(username, password, ip_address)
     @username = username
     @password = password
@@ -27,7 +25,7 @@ class User
   protected
 
   def login
-    puts "User logged in. IP address: @#{@ip_address}"
+    puts "User logged in. IP address: #{@ip_address}"
   end
 end
 
