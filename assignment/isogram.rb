@@ -9,6 +9,9 @@ def is_isogram(string)
   true
 end
 
+puts is_isogram('Dermatoglyphics')
+puts is_isogram('aba')
+puts is_isogram('moOse')
 puts is_isogram('abA')
 puts is_isogram('abc')
 puts is_isogram('cyril')
