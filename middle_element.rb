@@ -7,12 +7,12 @@
 # gimme([2, 3, 1]) => 0
 # gimme([5, 10, 14]) => 1
 
-def middle_element(array)
+def middle_element_index(array)
   sorted_array = array.sort
   middle_value = sorted_array[array.length / 2]
 
   array.index(middle_value)
 end
 
-puts middle_element([2, 3, 1]) # must index 0
-puts middle_element([5, 10, 14]) # must index 1
+puts middle_element_index([2, 3, 1]) # must index 0
+puts middle_element_index([5, 10, 14]) # must index 1
