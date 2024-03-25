@@ -7,11 +7,11 @@
 # gimme([2, 3, 1]) => 0
 # gimme([5, 10, 14]) => 1
 
-def middle_element(tuple)
-  sorted_array = tuple.sort
-  middle_value = sorted_array[tuple.length / 2]
+def middle_element(array)
+  sorted_array = array.sort
+  middle_value = sorted_array[array.length / 2]
 
-  tuple.index(middle_value)
+  array.index(middle_value)
 end
 
 puts middle_element([2, 3, 1]) # must index 0
