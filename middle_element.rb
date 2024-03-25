@@ -8,10 +8,11 @@
 # gimme([5, 10, 14]) => 1
 
 def middle_element(tuple)
-  max_value = tuple.max
-  min_value = tuple.min
-  tuple.select { |item| item != max_value && item != min_value }
+  sorted_array = tuple.sort
+  middle_value = sorted_array[tuple.length / 2]
+
+  tuple.index(middle_value)
 end
 
-puts middle_element([2, 3, 1]) # must return 2
-puts middle_element([5, 10, 14]) # must return 10
+puts middle_element([2, 3, 1]) # must index 0
+puts middle_element([5, 10, 14]) # must index 1
