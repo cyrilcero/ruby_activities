@@ -4,8 +4,9 @@
 # the other two elements.
 # The input to the function will be an array of three distinct numbers (Haskell: a tuple).
 
-# gimme([2, 3, 1]) => 0
-# gimme([5, 10, 14]) => 1
+# sort the array,
+# get the middle item from the array,
+# get the index of the middle array by finding the index of that item in the original array
 
 def middle_element_index(array)
   sorted_array = array.sort
