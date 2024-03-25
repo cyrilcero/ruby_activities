@@ -1,8 +1,8 @@
 def reverse_a_string(string)
-  reversed = ''
+  reversed_string = ''
   (string.length - 1).downto(0) do |item|
-    reversed += string[item]
+    reversed_string += string[item]
   end
-  reversed
+  reversed_string
 end
 puts reverse_a_string('hello')
