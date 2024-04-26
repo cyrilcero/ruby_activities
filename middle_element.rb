@@ -10,10 +10,12 @@
 
 def middle_element_index(array)
   sorted_array = array.sort
-  middle_value = sorted_array[array.length / 2]
+  middle_value = sorted_array[(array.length / 2).floor]
 
   array.index(middle_value)
 end
 
 puts middle_element_index([2, 3, 1]) # must index 0
 puts middle_element_index([5, 10, 14]) # must index 1
+puts middle_element_index([1, 2, 3, 4, 5]) # must index 2
+puts middle_element_index([1, 2, 3, 4, 5, 6, 7]) # must index 3
