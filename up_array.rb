@@ -8,8 +8,8 @@
 # if the value is 9, make it 0 then add 1 to the length-1 child
 
 def up_array(array)
-  whole_number = array.map(&:to_s).join('').to_i + 1
-  whole_number.to_s.chars.map(&:to_i)
+  whole_number = array.join('').to_i + 1
+  whole_number.to_s.split('')
 end
 
 p up_array([2, 3, 9])
