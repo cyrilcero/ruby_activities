@@ -3,7 +3,7 @@
 
 def reversed_alternate(string)
   array_of_words = string.split
-  output = []
+  output_array = []
   array_of_words.each_with_index do |word, index|
     output << if index.odd?
                 word.reverse!
@@ -11,7 +11,7 @@ def reversed_alternate(string)
                 word
               end
   end
-  output.join(' ')
+  output_array.join(' ')
 end
 
 p reversed_alternate('The quick brown fox')
