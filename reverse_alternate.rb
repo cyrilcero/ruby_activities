@@ -11,7 +11,8 @@ def reversed_alternate(string)
                 word
               end
   end
-  output
+  output.join(' ')
 end
 
 p reversed_alternate('The quick brown fox')
+p reversed_alternate(' ')
