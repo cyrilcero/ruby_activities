@@ -8,9 +8,13 @@
 # if the value is 9, make it 0 then add 1 to the length-1 child
 
 def up_array(array)
+  return nil if array.any? { |num| num.negative? || num > 9 } || array.empty?
+
   whole_number = array.join('').to_i + 1
   whole_number.to_s.split('')
 end
 
 p up_array([2, 3, 9])
 p up_array([4, 3, 2, 5])
+p up_array([4, 3, 12, -5])
+p up_array([])
